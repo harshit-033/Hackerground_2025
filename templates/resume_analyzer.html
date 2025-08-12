@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Resume Analyzer - JobMate AI</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="animated-bg"></div>
+  <div class="wrap inner-wrap">
+    <header class="topbar small">
+      <div class="brand">
+        <div class="logo">✨</div>
+        <div class="title">Resume Analyzer</div>
+      </div>
+      <div class="actions">
+        <a class="btn btn-outline" href="/">Home</a>
+      </div>
+    </header>
+
+    <main class="analyzer-grid">
+      <div class="panel left-panel">
+        <label>Profile / Resume</label>
+        <textarea id="resume" placeholder="Paste your resume here..."></textarea>
+
+        <label>Job Description</label>
+        <textarea id="job_desc" placeholder="Paste a job description..."></textarea>
+
+        <div class="form-row">
+          <button id="analyzeBtn" class="btn btn-blue">Generate Resume Insights</button>
+          <button id="downloadPdfBtn" class="btn btn-outline">Download Report</button>
+        </div>
+      </div>
+
+      <div class="panel right-panel">
+        <h3>Summary</h3>
+        <div id="summaryBox" class="result-box">No analysis yet — click "Generate Resume Insights".</div>
+
+        <h3>Details</h3>
+        <pre id="detailsBox" class="details-box"></pre>
+      </div>
+    </main>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

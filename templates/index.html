@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Career Assistant Portal - Neon</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="animated-bg"></div>
+  <div class="wrap">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">✨</div>
+        <div class="title">JobMate AI</div>
+        <div class="tag">AI-Powered Resume Optimization & Job Matching</div>
+      </div>
+    </header>
+
+    <main class="main-cards">
+      <section class="card blue-card">
+        <h2>Resume Analyzer</h2>
+        <p>Paste your resume and a job description to get an in-depth analysis and PDF report.</p>
+        <a class="btn btn-blue" href="/resume-analyzer">Open Analyzer</a>
+      </section>
+
+      <section class="card red-card">
+        <h2>Job Search</h2>
+        <p>Get job role suggestions and small resume tweaks based on your qualifications & achievements.</p>
+        <a class="btn btn-red" href="/job-search">Open Job Finder</a>
+      </section>
+    </main>
+
+
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

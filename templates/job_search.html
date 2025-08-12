@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Job Finder - JobMate AI</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="animated-bg"></div>
+  <div class="wrap inner-wrap">
+    <header class="topbar small">
+      <div class="brand">
+        <div class="logo">💼</div>
+        <div class="title">Job Finder</div>
+      </div>
+      <div class="actions">
+        <a class="btn btn-outline" href="/">Home</a>
+      </div>
+    </header>
+
+    <main class="finder-grid">
+      <div class="panel left-panel">
+        <label>Qualifications</label>
+        <textarea id="qualifications" placeholder="Enter your qualifications..."></textarea>
+
+        <label>Achievements</label>
+        <textarea id="achievements" placeholder="List your achievements..."></textarea>
+
+        <div class="form-row">
+          <button id="searchBtn" class="btn btn-red">Get Job Recommendations</button>
+          <button id="downloadJobsPdfBtn" class="btn btn-outline">Download Report</button>
+        </div>
+      </div>
+
+      <div class="panel right-panel">
+        <h3>Recommendations</h3>
+        <div id="jobsBox" class="result-box">No recommendations yet — click the button.</div>
+      </div>
+    </main>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
