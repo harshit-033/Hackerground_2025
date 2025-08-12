@@ -63,7 +63,7 @@ Tasks:
 3. Suggest 3 bullet-point improvements to the resume.
 4. Provide a short summary.
 Return the result in JSON format with keys: match_score, missing_skills (list), improvements (list), summary.
-If you cannot produce JSON, still return a clear plain-text analysis.
+ only return a clear plain-text analysis, do not return jason.
 """
 
     try:
@@ -89,7 +89,7 @@ def search_jobs():
 Based on the following qualifications and achievements, suggest 6 suitable job roles.
 For each role, give a one-line description and 2 small resume improvements to match that role.
 Return the result as JSON list where each item: {{'role':..., 'description':..., 'improvements':[...]}}
-If JSON is not possible, return human-readable text.
+ return human-readable text,do not return jason.
 QUALIFICATIONS:
 {qualifications}
 
